@@ -2,9 +2,12 @@
 
 namespace QA\Classes;
 
+
 /**
  * Class Author
- * @package App\Classes
+ * @package QA\Classes
+ * @author Haakon Aareskjold <aareskjold.haakon@gmail.com>
+ * @link https://github.com/haakonaareskjold/DIExample
  */
 class Author implements AuthorInterface
 {
