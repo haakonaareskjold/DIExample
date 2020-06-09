@@ -6,7 +6,7 @@ namespace QA\Classes;
  * Class Author
  * @package App\Classes
  */
-class Author
+class Author implements AuthorInterface
 {
     /**
      * @var string
