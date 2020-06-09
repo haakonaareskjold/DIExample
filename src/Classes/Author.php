@@ -1,24 +1,62 @@
 <?php
 
+namespace QA\Classes;
 
-namespace App\Classes;
-
-//without DI
+/**
+ * Class Author
+ * @package App\Classes
+ */
 class Author
 {
+    /**
+     * @var string
+     */
     private string $firstName;
+    /**
+     * @var string
+     */
     private string $lastName;
+    /**
+     * @var string
+     */
+    private string $nickName;
 
-    public function __construct($firstName, $lastName) {
+    /**
+     * Author constructor.
+     * @param string $firstName
+     * @param string $nickName
+     * @param string $lastName
+     */
+    public function __construct(string $firstName, string $nickName, string $lastName)
+    {
         $this->firstName = $firstName;
+        $this->nickName = $nickName;
         $this->lastName = $lastName;
     }
 
-    public function getFirstName() {
+
+
+    /**
+     * @return string
+     */
+    public function getFirstName(): string
+    {
         return $this->firstName;
     }
 
-    public function getLastName() {
+    /**
+     * @return string
+     */
+    public function getNickName(): string
+    {
+        return $this->nickName;
+    }
+
+    /**
+     * @return string
+     */
+    public function getLastName(): string
+    {
         return $this->lastName;
     }
 }
