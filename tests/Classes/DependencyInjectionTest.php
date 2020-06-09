@@ -11,6 +11,6 @@ class DependencyInjectionTest extends TestCase
         $author = new Author('Sebastian', 'Forsen', 'Fors');
         $question = new Question($author, 'What are frogs?');
 
-        $this->assertSame("Sebastian 'Forsen' Fors - What are frogs?", $question->getResult());
+        $this->assertSame("What are frogs? - Sebastian 'Forsen' Fors", $question->getResult());
     }
 }

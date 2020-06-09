@@ -59,8 +59,8 @@ class Question
     {
         return sprintf(
             "%s - %s",
+            $this->getQuestion(),
             $this->getAuthor(),
-            $this->getQuestion()
         );
     }
 }
