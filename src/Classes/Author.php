@@ -2,7 +2,6 @@
 
 namespace QA\Classes;
 
-
 /**
  * Class Author
  * @package QA\Classes

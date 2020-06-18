@@ -2,7 +2,6 @@
 
 namespace QA\Classes;
 
-
 /**
  * Class Question
  * @package QA\Classes
