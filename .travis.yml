@@ -11,6 +11,6 @@
     "composer install --no-interaction"
   ],
   "script": [
-    "vendor/bin/phpunit"
+    "bin/phpunit"
   ]
 }
