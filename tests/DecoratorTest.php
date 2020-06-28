@@ -1,7 +1,11 @@
 <?php
+declare(strict_types=1);
 
-namespace DesignPatterns\Structural\Decorator\Classes;
+namespace DesignPatterns\Tests;
 
+use DesignPatterns\Structural\Decorator\DoubleRoomBooking;
+use DesignPatterns\Structural\Decorator\ExtraBed;
+use DesignPatterns\Structural\Decorator\WiFi;
 use PHPUnit\Framework\TestCase;
 
 class DecoratorTest extends TestCase

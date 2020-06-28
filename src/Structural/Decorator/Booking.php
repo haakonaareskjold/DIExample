@@ -2,7 +2,7 @@
 declare(strict_types=1);
 
 
-namespace DesignPatterns\Structural\Decorator\Classes;
+namespace DesignPatterns\Structural\Decorator;
 
 
 interface Booking
