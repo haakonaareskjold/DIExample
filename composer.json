@@ -5,12 +5,12 @@
     },
     "autoload": {
         "psr-4": {
-            "QA\\": "src/"
+            "DesignPatterns\\Structural\\Decorator\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "QA\\": "tests/"
+            "DesignPatterns\\\\Structural\\\\Decorator\\": "tests/"
         }
     },
     "require-dev": {
