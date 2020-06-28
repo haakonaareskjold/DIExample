@@ -9,6 +9,14 @@ class WiFi extends BookingDecorator
 {
     private const PRICE = 2;
 
+    protected Booking $booking;
+
+    public function __construct(Booking $booking)
+    {
+        parent::__construct($booking);
+        $this->booking = $booking;
+    }
+
     public function calculatePrice(): int
     {
         return $this->booking->calculatePrice() + self::PRICE;
