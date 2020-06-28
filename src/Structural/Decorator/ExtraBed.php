@@ -1,9 +1,8 @@
 <?php
+
 declare(strict_types=1);
 
-
 namespace DesignPatterns\Structural\Decorator;
-
 
 class ExtraBed extends BookingDecorator
 {
@@ -19,7 +18,7 @@ class ExtraBed extends BookingDecorator
 
     public function calculatePrice(): int
     {
-       return $this->booking->calculatePrice() + self::PRICE;
+        return $this->booking->calculatePrice() + self::PRICE;
     }
 
     public function getDescription(): string
