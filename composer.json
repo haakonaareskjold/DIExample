@@ -10,7 +10,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "DesignPatterns\\\\Structural\\\\Decorator\\": "tests/"
+            "DesignPatterns\\Structural\\Decorator\\": "tests/"
         }
     },
     "require-dev": {
