@@ -3,7 +3,7 @@
   "os": [
     "linux"
   ],
-  "dist": "bionic",
+  "dist": "Focal",
   "php": [
     "7.4"
   ],

@@ -1,7 +1,7 @@
 {
     "name": "haakon/di",
     "require": {
-        "php": "7.4.*"
+        "php": ">7.4"
     },
     "autoload": {
         "psr-4": {
@@ -14,8 +14,8 @@
         }
     },
     "require-dev": {
-        "phpunit/phpunit": "9.2.*",
-        "squizlabs/php_codesniffer": "3.5.*"
+        "phpunit/phpunit": ">9.2.6",
+        "squizlabs/php_codesniffer": ">3.5"
     },
     "config": {
         "bin-dir": "bin"
