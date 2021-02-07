@@ -4,17 +4,16 @@ declare(strict_types=1);
 
 namespace DesignPatterns\Structural\Decorator;
 
-class WiFi extends BookingDecorator
+class SingleRoomBooking implements Booking
 {
-    private const PRICE = 2;
 
     public function calculatePrice(): int
     {
-        return $this->booking->calculatePrice() + self::PRICE;
+        return 30;
     }
 
     public function getDescription(): string
     {
-        return $this->booking->getDescription() . ' with wifi';
+        return 'single room';
     }
 }

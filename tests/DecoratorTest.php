@@ -5,6 +5,7 @@ namespace DesignPatterns\Tests;
 
 use DesignPatterns\Structural\Decorator\DoubleRoomBooking;
 use DesignPatterns\Structural\Decorator\ExtraBed;
+use DesignPatterns\Structural\Decorator\SingleRoomBooking;
 use DesignPatterns\Structural\Decorator\WiFi;
 use PHPUnit\Framework\TestCase;
 
@@ -16,6 +17,24 @@ class DecoratorTest extends TestCase
 
         $this->assertSame(40, $booking->calculatePrice());
         $this->assertSame('double room', $booking->getDescription());
+    }
+
+
+    public function testCanCalculatePriceForSingleRoomBooking()
+    {
+        $booking = new SingleRoomBooking();
+
+        $this->assertSame(30, $booking->calculatePrice());
+        $this->assertSame('single room', $booking->getDescription());
+    }
+
+    public function testCanCalculatePriceForSingleRoomBookingWithWifi()
+    {
+        $booking = new SingleRoomBooking();
+        $booking = new WiFi($booking);
+
+        $this->assertSame(32, $booking->calculatePrice());
+        $this->assertSame('single room with wifi', $booking->getDescription());
     }
 
     public function testCanCalculatePriceForDoubleRoomBookingWithWiFi()
